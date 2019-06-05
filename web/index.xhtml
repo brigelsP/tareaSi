@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>tarea</title>
+    </h:head>
+    <h:body>
+       tarea
+        <br />
+        <h:form>
+            <p:dataTable paginator="true" rows="5" value="#{form.todo()}" var="e">
+                <p:column headerText="id">
+                    <h:outputText value="#{e.id}"/>
+                </p:column>
+                <p:column headerText="usuario">
+                    <h:outputText value="#{e.usuario}"/>
+                </p:column>
+                <p:column headerText="nombre">
+                    <h:outputText value="#{e.nombre}"/>
+                </p:column>
+                <p:column headerText="apellido">
+                    <h:outputText value="#{e.apellido}"/>
+                </p:column>
+                <p:column headerText="email">
+                    <h:outputText value="#{e.email}"/>
+                </p:column>
+                <p:column headerText="celular">
+                    <h:outputText value="#{e.celular}"/>
+                </p:column>
+                <p:column headerText="fechaRegistro">
+                    <h:outputText value="#{e.fechaRegistro}"/>
+                </p:column>
+                <p:column headerText="activo">
+                    <h:outputText value="#{e.activo}"/>
+                </p:column>
+                <p:column headerText="disponible">
+                    <h:outputText value="#{e.disponible}"/>
+                </p:column>
+                <p:column headerText="clave">
+                    <h:outputText value="#{e.clave}"/>
+                </p:column>
+                <p:column headerText="tipoUsuario">
+                    <h:outputText value="#{e.tipoUsuario}"/>
+                </p:column>
+            
+            </p:dataTable>
+            
+        </h:form>
+        
+    </h:body>
+</html>
+
